@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 65px;
+            width: 100px;
+            background-color: yellow;
+            animation-name: sara;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-direction: normal;
+            color:red;
+            margin: 240px;
+        }
+        @keyframes sara {
+            0%{
+                background-color: yellow;
+                height: 65px;
+                width: 100px;
+                color:red;
+                transform: translate(0,0) rotate(0);
+            }
+            50%{
+                background-color:orangered;
+                width: 250px;
+                height: 65px;
+                color:brown;
+                border-radius: 30px;
+                transform: translate(100,100) rotate(-180deg);
+            }
+            100%{
+                background-color: red;
+                width:450px;
+                height:65px;
+                color:blue;
+                transform: translate(0,0) rotate(-360deg);
+                border-radius: 30px;
+                text-align: center;
+                font-size:30px
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>ceci est l'effet que je nomme <span>Hélix</span>!</p>
+    </div>
+</body>
+</html>
